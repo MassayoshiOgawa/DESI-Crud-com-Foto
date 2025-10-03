@@ -30,5 +30,13 @@
             }
             return false;
         }
+
+        public function getUserById($userId) {
+            $sql = "SELECT * FROM usuario WHERE id = :id";
+            $stmt = $this -> conn->prepare($sql);
+            $stmt -> bindParam(':id', $userId);
+            $stmt -> execute();
+            return $stmt -> fetch(PDO::FETCH_ASSOC);
+        }
     };
 ?>
