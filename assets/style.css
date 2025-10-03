@@ -41,3 +41,12 @@ input{
     padding: 20px;
     margin-top: 10px;
 }
+
+.middle{
+    background-color: red;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
