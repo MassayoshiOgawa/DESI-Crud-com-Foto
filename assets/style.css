@@ -43,10 +43,9 @@ input{
 }
 
 .middle{
-    background-color: red;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;   
+    margin: auto;
 }
